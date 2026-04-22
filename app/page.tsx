@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function HomePage(): JSX.Element {
+export default function HomePage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-950 text-white">
       <header className="mx-auto max-w-5xl px-4 pb-4 pt-20 text-center">

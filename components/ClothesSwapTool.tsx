@@ -44,7 +44,7 @@ interface DropSlotProps {
   onError: (m: string) => void;
 }
 
-function DropSlot({ label, hint, file, previewUrl, onFile, onError }: DropSlotProps): JSX.Element {
+function DropSlot({ label, hint, file, previewUrl, onFile, onError }: DropSlotProps) {
   const onDrop = useCallback(
     (accepted: File[], rejected: FileRejection[]) => {
       if (rejected.length > 0) {
@@ -108,7 +108,7 @@ function DropSlot({ label, hint, file, previewUrl, onFile, onError }: DropSlotPr
 }
 
 // ---------------------------------------------------------------------
-export default function ClothesSwapTool(): JSX.Element {
+export default function ClothesSwapTool() {
   const [state, setState] = useState<SwapState>(initial);
 
   const updateFile = (key: "person" | "garment") => (file: File) => {
