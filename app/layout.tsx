@@ -1,0 +1,25 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+
+import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
+export const metadata: Metadata = {
+  title: {
+    default: "AI Clothes Swapper - Virtual Try-On",
+    template: "%s · AI Clothes Swapper",
+  },
+  description:
+    "Experience instant virtual try-on with our AI-powered tool.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>): JSX.Element {
+  return (
+    <html lang="en" className={inter.variable}>
+      <body className="antialiased">{children}</body>
+    </html>
+  );
+}

@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    image: ai-virtual-tryon:local
+    container_name: ai-virtual-tryon
+    ports:
+      - "3000:3000"
+    environment:
+      - REPLICATE_API_TOKEN=${REPLICATE_API_TOKEN}
+      - NODE_ENV=production
+    restart: unless-stopped
