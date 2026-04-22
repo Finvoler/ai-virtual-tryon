@@ -1,5 +1,3 @@
-"use server";
-
 // app/api/clothes-swap/route.ts
 //
 // POST /api/clothes-swap
